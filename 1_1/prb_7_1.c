@@ -1,3 +1,4 @@
+/* prb 7.1 ->> 1+2+3......upto nth term */
 #include <stdio.h>
 
 int main()
