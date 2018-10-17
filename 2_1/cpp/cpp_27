@@ -16,7 +16,7 @@ public:
         cin>>p;
     }
 
-    virtual float calculateArea()= 0;
+    virtual float calculateArea()= 0; /// pure virtualfunction declaration .
 };
 
 class square : public shape{
