@@ -1,0 +1,62 @@
+ ///Write a C++ program for implementing the concept of pure virtual function.
+
+
+#include<iostream>
+using namespace std;
+
+class shape
+{
+
+protected:
+    float p=1;
+public:
+    void getData()
+    {
+
+        cin>>p;
+    }
+
+    virtual float calculateArea()= 0;
+};
+
+class square : public shape{
+
+
+public :
+    float calculateArea()
+    {
+        return p*p;
+    }
+};
+
+
+class circle : public shape
+{
+    public:
+    float pi = 3.14;
+    float calculateArea()
+    {
+        return pi*p*p;
+    };
+};
+int main()
+{
+
+
+    square s;
+    circle c;
+
+
+    cout<<"enter length to calculate the area of a square:  ";
+    s.getData();
+    cout<< "Area of square:  "<< s.calculateArea()<<endl;
+
+    cout<< "Enter radius to calculate the area of a circuit:  ";
+    c.getData();
+    cout<<"Area of circle : "<<c.calculateArea();
+
+
+    return 0;
+
+}
+
