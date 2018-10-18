@@ -1,0 +1,53 @@
+ 
+ 
+ 
+ import java.util.Scanner;
+ 
+ 
+ public class Test{
+ 
+ 
+ public static void main(String[] args) {
+
+        double a, b, res;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter Two Number : ");
+        a = scan.nextDouble();
+        b = scan.nextDouble();
+
+        char o = scan.next().charAt(0);
+
+
+        switch (o)
+        {
+            case '+':
+            res = a+b;
+            break;
+
+
+            case '-' :
+                res= a-b;
+                break;
+
+
+
+            case '*' :
+
+                res = a* b;
+                break;
+
+
+
+
+            case '/' :
+                res = a/b;
+                break;
+
+            default:
+                System.out.println("ERROR! operator is not correct  ");
+                return ;
+        }
+        System.out.println("result = "+res);
+    }
