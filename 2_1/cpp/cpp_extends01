@@ -1,0 +1,30 @@
+///suppose that your account at the bank is credited
+///with $b and that the annual interest rate is r%.The capital you will have accumulated over n years ..
+
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+
+
+using namespace std;
+
+int main(){
+
+
+double b,r;
+int n;
+
+cout<<"Amount ? " ;
+cin >> b;
+
+cout<<"Interest ? ";
+cin >> r;
+
+cout<<"Number of Years ? " ;
+cin >> n;
+
+cout<< setprecision(1) << setiosflags(ios::fixed)<<"The capital becomes " << b * pow(1+r/100,n);
+
+
+
+}
